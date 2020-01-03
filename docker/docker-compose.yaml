@@ -1,7 +1,7 @@
 version: "3"
 services:
   reverseproxy:
-      image: dockerahmedramadan/udacity-c3-nginx
+      image: dockerahmedramadan/udacity-c3-reverseproxy
       ports:
           - 8080:8080
       restart: always
@@ -43,4 +43,4 @@ services:
   frontend:
     image: dockerahmedramadan/udacity-c3-frontend
     ports:
-      - "8100:8100"
+      - "8100:80"

@@ -3,7 +3,7 @@ services:
   reverseproxy:
     build:
       context: .
-    image: dockerahmedramadan/udacity-c3-nginx
+    image: dockerahmedramadan/udacity-c3-reverseproxy
   backend_user:
     build:
       context: ../udacity-c3-restapi-user
