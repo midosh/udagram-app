@@ -1,5 +1,6 @@
 import express from 'express';
 import { sequelize } from './sequelize';
+import dotenv from 'dotenv';
 
 import { IndexRouter } from './controllers/v0/index.router';
 

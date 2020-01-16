@@ -1,25 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  labels:
-    service: backend-feed
-  name: backend-feed
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      service: backend-feed
-  template:
-    metadata:
       labels:
         service: backend-feed
-    spec:
+spec:
       containers:
       - image: dockerahmedramadan/udacity-c3-restapi-feed
         name: backend-feed
         ports:
          - containerPort: 8080
-        imagePullPolicy: Never                   
+        imagePullPolicy: Always  
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"                  
         env:
         - name: URL
           valueFrom:

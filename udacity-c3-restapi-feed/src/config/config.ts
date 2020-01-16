@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config({path: "../../.env"})
 export const config = {
   "dev": {
     "username": process.env.POSTGRESS_USERNAME,
