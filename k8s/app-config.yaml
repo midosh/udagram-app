@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udagram-app
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: hello
+  POSTGRESS_DB: udagramapp
+  POSTGRESS_HOST: udagram-app.ck7qfydjxsr1.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100  
+metadata:
+  name: env-config
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: env-secret
+type: Opaque
+data:
+  POSTGRESS_USERNAME: dWRhZ3JhbWFwcA==
+  POSTGRESS_PASSWORD: dWRhZ3JhbWFwcA==
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: aws-secret
+type: Opaque
+data:
+  credentials: W2RlZmF1bHRdCmF3c19hY2Nlc3Nfa2V5X2lkID0gIEFLSUFVU0lHV0pOVDY3WFEyUUFGCmF3c19zZWNyZXRfYWNjZXNzX2tleSA9IDFEMW1uM1EyN0M3dkx1WlVsNHYwUlBkR2RyNmFMbVdiSkFvOGlQTzIK 
+
+
