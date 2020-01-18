@@ -26,10 +26,14 @@ Clone the repository on your local machine:
 ```
 Also, You can get the images from my docker hub account:
 
-   reverseproxy image: https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-reverseproxy
-   backend-feed image: https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-restapi-feed
-   backend-user image: https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-restapi-user
-   frontend image: https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-frontend
+reverseproxy image: 
+https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-reverseproxy
+backend-feed image: 
+https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-restapi-feed
+backend-user image: 
+https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-restapi-user
+frontend image: 
+https://hub.docker.com/repository/docker/dockerahmedramadan/udacity-c3-frontend
 
 
 ### Create an S3 bucket
