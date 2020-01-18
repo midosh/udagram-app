@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: dockerahmedramadan/udacity-c3-reverseproxy
+      - image: dockerahmedramadan/udacity-c3-reverseproxy:v1
         name: reverseproxy
         imagePullPolicy: Always               
         ports:
